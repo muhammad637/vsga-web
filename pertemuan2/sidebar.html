@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    body {
+      height: 100%;
+      width: 100%;
+      background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+    }
+    
+    .main {
+      margin: 10px;
+      transition: 0.5s;
+    }
+
+    .main p {
+      margin-top: 20px;
+    }
+
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 50px;
+    }
+
+    .sidebar a {
+      transition: 0.5s;
+      margin: 10px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+      padding: 30px;
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    .openbtn {
+      border-radius: 5px;
+      transition: 0.5s;
+      padding: 15px 20px;
+      background-color: black;
+      color: white;
+      font-size: 30px;
+    }
+
+    .openbtn:hover,
+    .sidebar a:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="sidebar">
+    <a href="#">About</a>
+    <a href="#">About</a>
+    <a href="#">About</a>
+    <a href="#">About</a>
+  </div>
+
+  <div class="main">
+    <button class="openbtn">☰</button>
+    <p>
+    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus, dolores? Quia sequi laborum minima atque
+      ratione ea fuga temporibus molestiae.</h3>
+    </p>
+  </div>
+
+  <script>
+    const openbtn = document.querySelector('.openbtn');
+    const sidebar = document.querySelector('.sidebar');
+    const main = document.querySelector('.main');
+
+    openbtn.addEventListener('click', () => {
+      const toggle = openbtn.classList.toggle('is-active');
+
+      if (toggle == false) {
+        sidebar.style.width = "0";
+        main.style.marginLeft = "10px";
+        openbtn.style.transform = "rotate(0deg)";
+      } else {
+        sidebar.style.width = "200px";
+        main.style.marginLeft = "210px";
+        openbtn.style.transform = "rotate(90deg)";
+      }
+    });
+
+
+  </script>
+</body>
+
+</html>

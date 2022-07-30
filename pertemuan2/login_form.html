@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      height: 100%;
+      width: 100%;
+      background-color: skyblue;
+    }
+
+    .card {
+      margin: auto;
+      padding: 20px;
+      text-align: center;
+      width: fit-content;
+      height: fit-content;
+      background-color: whitesmoke;
+      border-radius: 5px;
+      color: #111;
+      font-size: 25px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+    }
+    .input, #loginbtn{
+      border-radius: 5px;
+      margin: 5px 0;
+      height: 30px;
+      width: 200px;
+      background-color: grey;
+    }
+    #loginbtn{
+      align-self: center;
+      width: 100px;
+      background-color: skyblue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <div class="head">Login</div>
+    <div class="form">
+      <input class="input" type="email" name="email" id="email">
+      <input class="input" type="password" name="password" id="password">
+      <button type="button" id="loginbtn">Login</button>
+    </div>
+</body>
+
+</html>

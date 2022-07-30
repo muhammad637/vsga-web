@@ -1,0 +1,55 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="bootstrap-5/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+    .navbar a {
+      float: left;
+      font-size: 16px;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+
+    }
+
+    .dropdown-menu a {
+      color: black;
+      text-align: left;
+    }
+
+    .navbar a:hover {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="navbar navbar-expand-lg bg-secondary">
+    <a href="#home">Home</a>
+    <a href="#news">News</a>
+    <div class="dropdown">
+      <button class="btn bg-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+        aria-expanded="false">Dropdown</button>
+      <ul class="dropdown-menu overflow-scroll" aria-labelledby="dropdownMenuButton1">
+        <li><a class="dropdown-item" href="#">Action Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            iusto!</a></li>
+        <li><a class="dropdown-item" href="#">Action2</a></li>
+        <li><a class="dropdown-item" href="#">Action3</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="bootstrap-5/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
