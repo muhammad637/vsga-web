@@ -6,27 +6,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div>
+  <div class="container">
     <header>
-      <div>
+      <div class="logo">
         <a href="index.html"><img src="images/logo-poliwangi.png" alt="logo1"></a>
       </div>
 
-      <div>
+      <div class="searchbtn">
         <form>
           <input type="search" name="search" placeholder="search site...">
-          <input type="submit" name="submit">
+          <input type="submit" value="submit">
         </form>
       </div>
-      <nav>
+
+      <div class="clearfix"></div>
+
+      <nav class="main-menu">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Tentang kami</a></li>
           <li><a href="#">Layanan</a>
-            <ul>
+            <ul class="drop">
               <li><a href="#">Peminjaman</a>
               <li>
               <li><a href="#">Pengambilan</a>
@@ -44,7 +48,7 @@
     </header>
     <!-- End Header -->
 
-    <section>
+    <section class="banner">
       <img src="images/banner-vsga.jpg" alt="banner1">
       <img src="images/banner-vsga.jpg" alt="banner2">
     </section>
@@ -114,7 +118,7 @@
       </div>
       <div>
         <h3>Menu Footer 3</h3>
-        <ul>
+        <ul style="list-style-type: none;">
           <li><a href="#">Home</a></li>
           <li><a href="#">Tentang Kami</a></li>
           <li><a href="#">Layanan</a></li>
@@ -135,8 +139,15 @@
 
     <div>
       <p><small>Hak Cipta &copy;2022. Hak Cipta Dilindungi</small></p>
+      <p id="inner" onclick="fn();">ini gapake inner</p>
     </div>
   </div>
+
+
+  <script>
+    var inner = document.getElementById('inner');
+
+  </script>
 </body>
 
 </html>
