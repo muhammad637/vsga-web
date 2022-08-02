@@ -48,14 +48,17 @@
     </header>
     <!-- End Header -->
 
-    <section class="banner">
-      <img src="images/banner-vsga.jpg" alt="banner1">
-      <img src="images/banner-vsga.jpg" alt="banner2">
+    <section class="banner cycle-slideshow">
+      <div class="gallery-slideshow">
+        <img src="images/banner-vsga.jpg" alt="banner1">
+        <img src="images/banner-vsga.jpg" alt="banner2">
+      </div>
+
     </section>
 
     <!-- Start Section Content -->
-    <section>
-      <article>
+    <section class="content-holder">
+      <article class="content">
         <h1>Lorem, ipsum.</h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quos enim nam sed. Doloremque autem
@@ -80,7 +83,7 @@
         </p>
       </article>
 
-      <aside>
+      <aside class="sidebar">
         <div>
           <h3>Kategori</h3>
           <ul>
@@ -91,12 +94,14 @@
         </div>
       </aside>
 
+      <div class="clearfix"></div>
+
     </section>
     <!-- End Section Content -->
     <!-- Footer -->
 
-    <footer>
-      <div>
+    <footer class="main-footer">
+      <div class="footer-box">
         <h3>Menu Footer</h3>
         <ul>
           <li><a href="#">Home</a></li>
@@ -106,7 +111,7 @@
           <li><a href="#">Kontak Kami</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-box">
         <h3>Menu Footer 2</h3>
         <ul>
           <li><a href="#">Home</a></li>
@@ -116,9 +121,9 @@
           <li><a href="#">Kontak Kami</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-box">
         <h3>Menu Footer 3</h3>
-        <ul style="list-style-type: none;">
+        <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Tentang Kami</a></li>
           <li><a href="#">Layanan</a></li>
@@ -126,28 +131,34 @@
           <li><a href="#">Kontak Kami</a></li>
         </ul>
       </div>
-      <div>
+      <div class="footer-box">
         <address>
+          <h3>Alamat Kantor</h3>
           <p>Jln Raya Jember KM13, Kabat</p>
-          <p><a href="mailto: test@gmail.com">test@gmail.com</a></p>
-          <p><a href="tel: 1234567809">1234567809</a></p>
+          <p>Email :<a href="mailto: test@gmail.com">test@gmail.com</a></p>
+          <p>Telp :<a href="tel: 1234567809">1234567809</a></p>
         </address>
       </div>
 
+      <div class="clearfix"></div>
+
+      <div class="copyright">
+        <p><small>Hak Cipta &copy;2022. Hak Cipta Dilindungi</small></p>
+      </div>
     </footer>
     <!-- End Footer -->
 
-    <div>
-      <p><small>Hak Cipta &copy;2022. Hak Cipta Dilindungi</small></p>
-      <p id="inner" onclick="fn();">ini gapake inner</p>
-    </div>
+
+
   </div>
-
-
   <script>
     var inner = document.getElementById('inner');
 
   </script>
 </body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+<!-- <script src="http://malsup.github.com/jquery.cycle2.js"></script> -->
+
 
 </html>
