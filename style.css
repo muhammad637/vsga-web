@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  border: 2px solid black;
+  margin: 0 auto;
+  height: auto;
+  width: 200px;
+  display: block;
+
+}
+
+img {
+  height: auto;
+  width: 200px;
+  aspect-ratio: 6/4;
+
+}
+
+.text {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.text:focus {
+  pointer-events: none;
+  height: auto;
+  white-space: initial;
+  overflow: visible;
+  text-align: justify;
+  text-justify: inter-word;
+}

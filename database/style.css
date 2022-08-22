@@ -1,0 +1,60 @@
+* {
+  margin: 0 2px;
+  padding: 0;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+table tr td,
+th {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+table th {
+  text-transform: uppercase;
+  background-color: aquamarine;
+}
+
+table {
+  margin-top: 5px;
+  border-collapse: collapse;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+
+button {
+  display: block;
+  padding: 5px;
+  background-color: red;
+  border: none;
+  border-radius: 3px;
+  margin: 20px 0;
+  clear: both;
+}
+
+label {
+  width: 150px;
+  clear: left;
+  padding-right: 10px;
+}
+
+input,
+label {
+  margin-bottom: 10px;
+  float: left;
+}
+
+table tr td button {
+  display: inline-block;
+}
