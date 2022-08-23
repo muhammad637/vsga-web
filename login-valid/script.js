@@ -24,7 +24,7 @@ function validate(event) {
     removeError();
     alert('Anda Berhasil Login!');
     // location.href = 'page2.php';
-    // window.open("page2.php", "blank");
+    window.open('page2.php', '_blank', 'name = ${email.value}')
   }
 }
 
